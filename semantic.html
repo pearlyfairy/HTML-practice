@@ -1,0 +1,104 @@
+<!--Semantic HTML
+    -- gives meaning to our code 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 Semantic HTML</title>
+</head>
+<body>
+    
+    <header>
+        <h1> Welcome to our website!</h1>
+        <nav>
+            <ul>
+                <li> <a href="https://www.example.com"> Home </a></li>
+                <li> <a href="https://www.example.com"> About </a></li>
+                <li> <a href="https://www.example.com"> Services </a></li>
+                <li> <a href="https://www.example.com"> Contact </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section> 
+            <h2> About US</h2>
+            <p> We are a company dedicated to providing high quality products to our customers. </p>
+        </section>
+
+        <section> 
+            <h2> Services </h2>
+            <ul>
+                <li> Products Sales</li>
+                <li> Consultation</li>
+                <li> Support</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- TABLES-->
+    <table border="3"> 
+        <thead> <!--table head-->
+            <tr> <!--table row-->
+            <th>Name</th> <!--table header-->
+            <th colspan="2">Details</th>            
+        </tr>
+    </thead>
+
+    <tbody> <!--table body-->
+        <!--rows and cells go here-->
+        <tr> 
+            <td rowspan="2">John</td> <!--table data-->
+            <td rowspan="2">47 y/o</td>
+            <td>New York</td>
+        </tr>
+        <tr>
+            <td>Singapore</td>            
+        </tr>
+        <tr>
+            <td>Joseph</td>
+            <td>25 y/o</td>
+            <td>Hong Kong</td>
+        </tr>
+    </tbody>
+
+    <tfoot> <!--table footer-->
+        <tr> 
+            <td colspan="3">Total: 2 people</td>
+        </tr>
+    </tfoot>
+    </table>
+
+    <br/>
+
+    <!--adding image using image url-->
+    <img src="https://wallpapercave.com/wp/wp13165164.jpg" 
+    alt="Alternative Text for the image" 
+    height="200px" 
+    width="300px" 
+    />
+
+    <br/>
+
+    <!--adding image from loal folder-->
+    <img src="./images/local-image.jpeg" 
+    alt="image is from local folder" 
+    height="300px" 
+    width="300px" 
+    />
+
+    <br/>
+
+    <aside>
+        <h3> Latest News </h3>
+        <p> Check our new product launch!</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2024 Company name. All rights reserved.</p>
+    </footer>
+</body>
+</html>

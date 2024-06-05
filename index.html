@@ -1,0 +1,161 @@
+<!--
+    HTML - HyperText Markup Language
+    -- provides the backbone / structure of the website  
+    
+    HTML Tags -- defines the elements on a webpage
+
+    Attributes -- provides aadditional information about HTML elements
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 3 - HTML Basics</title>
+    </head>
+
+    <body>
+        <p> <!--openingi tag-->
+            HTML Practice <!-- content-->
+        </p> <!-- closing tag -->
+        <br /> <!-- line break --no opening tag is required -->
+        
+    <!--HEADING-->
+    <h1> This is heading 1. </h1>
+    <h2> This is heading 2. </h2>
+    <h3> This is heading 3. </h3>
+    <h4> This is heading 4. </h4>
+    <h5> This is heading 5. </h5>
+    <h6> This is heading 6. </h6> 
+    <hr/>
+ 
+    <strong> 
+        <a id="section1"> This is the anchor point. Jump here. </a>    
+    </strong><hr/>
+
+    <!--Inserting a horizontal line-->
+    
+    <p> <!--for paragraphs-->
+        This is the first line. <br /> <!--inserting <br/ for line breaks-->
+        This is the second line. <br />
+        This is the third line. <hr/>       
+        
+        <!--Text Styling-->
+        <p>This is an <strong> important </strong> text. </p>
+        <p> This text is <em> emphasized </em>.</p>
+        <p> This text is <u> underlined. </u>.</p>
+        <p> This text is <s> no longer valid</s>.</p>
+        <p> H<sub>2</sub>0 is the chmical formula for water. </p>
+        <p> The speed of light is approximately 3 x 10<sup>8</sup> m/s.</p><hr/>         
+
+        <!--Lists-->
+        <h3>Ordered List</h3>
+        <ol> <!--numbering-->
+            <li>This is the first ordered list item.</li>
+            <li>This is the second ordered list item.</li>
+            <li>This is the third ordered list item.</li>            
+        </ol>
+
+        <h3>Unordered List</h3>
+        <ul> <!--bullet point-->
+            <li>This is the first unordered list item.</li>
+            <li>This is the second unordered list item.</li>
+            <li>This is the third unordered list item.</li>            
+        </ul>
+
+        <h3>Definition List</h3>
+        <dl> <!--Definition List -- providdes the definition of a certain term -->
+            <dt>HTML</dt> <!--Definition term -- marks the term to be defined -->
+            <dd>HyperText Markup Language</dd> <!--Definition Description -- provided the dinition for the term in <dt> -->
+        
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+        </dl>
+
+        <h3> Nested list </h3>
+            <ul>
+                <li> List item 1 </li>
+                <li> List item 2 </li>
+                <ol>
+                    <li>Subitem 1</li>
+                    <li>Subitem 2</li>
+                </ol>
+                <li>List item 3</li>
+            </ul> <hr />            
+
+        <!-- Links and Anchors -->
+        <!-- This paragraph with a link to an external website-->
+        <p>
+            Go to this page: 
+            <a href="https://www.linkedin.com/in/peisan1610"> Visit my Linkedin profile</a>
+        </p>
+        <!-- This is a parapgraph with a link to an eternal website but set to open in a new tab. -->
+        <p> 
+            Open link in a new tab: 
+            <a href="https://www.linkedin.com/in/peisan1610" target="_blank"> <!--the code is "_blank"-->
+            Visit my Linkedin profile in a new tab
+            </a>
+        </p> <hr />
+      
+        <!-- Creating anchor points within a page using the <a> tag -->
+            <h4> Sample Page Content</h4>
+            <p> This is some content on a page. </p>
+        
+            <!-- Create the anchor point -->
+            <!-- <a id="section1">. This is the anchor point. Jump here. </a> -->
+            <a id="section1"> This is the anchor point. Jump here. </a>
+
+            <h3> Section 1 </h3>
+            <p> This is the content of Section 1</p>
+
+            <!-- Creating a link to the anchor -->
+            <a href="#section1"> Jump to Section 1</a> <hr />
+                    
+            <!-- Forms -->
+            <form> 
+                <h2>Sample Form</h2> 
+                <!--Text Input-->
+                <label for="name"> Name: </label>      
+                                        
+                <input type="text" id="name" required/><br /><br />
+                            
+                <!-- Text Area -->
+                <label for ="message"> Message: </label> <br/>
+            
+                <textarea
+                    id="message"
+                    rows="4"
+                    cols="50"
+                    placeholer="Enter a message here"
+                    required
+                    > 
+                </textarea><br /><br />  
+
+                <!--Dropdownn Menu-->                
+                <label for="gender"> Gender: </label>
+                <select id="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select><br /><br />              
+                
+                <!--Radio Button-->
+                <input type="radio" id="option1" name="options"/>
+                <label for="option1">Option 1</label> <br/>
+                <input type="radio" id="option2" name="options"/>
+                <label for="option1">Option 2</label> <br/>
+                <input type="radio" id="option3" name="options"/>
+                <label for="option1">Option 3</label> <br /><br />       
+                
+                <!-- Checkboxes-->              
+                <input type="checkbox" id="check1" name="checkboxes"/>
+                <label for="check1"> Check 1</label> <br/>
+                <input type="checkbox" id="check2" name="checkboxes"/>
+                <label for="check1"> Check 2</label> <br/>
+                <input type="checkbox" id="check4" name="checkboxes"/>
+                <label for="check1"> Check 3</label> <br /><br />               
+                
+                <button type="submit">Submit</button>        
+            </form>
+
+
+    </body>
+
+</html>
